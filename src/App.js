@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Board from "./components/Board";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div>
+      <h3>
+        Source: Udemy course (
+        <a href="https://www.udemy.com/course/modern-react-bootcamp">
+          https://www.udemy.com/course/modern-react-bootcamp
         </a>
-      </header>
+        )
+        <hr />
+        <h4>
+          Changed everything from class component to functional components
+        </h4>
+      </h3>
+
+      <div className="App">
+        <Board />
+      </div>
     </div>
   );
 }
